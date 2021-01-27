@@ -128,14 +128,18 @@
         font-size: 28px;
         width: 301px;
     }
+    
+    .contact__content{
+        padding: 133px 31px 50px 31px;
+        background-image: url(img/bg-contact-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Roboto';   
+    }
 
     .contact__title{
         padding-bottom: 30px;
-    }
-
-    .contact__content{
-        padding: 133px 31px 50px 31px;
-        background-image: url(img/bg-contact-mobile.png);        
+        font-family: 'Risque';
     }
 
     .contact__form input{
@@ -144,10 +148,57 @@
         border: 3px solid #FFFFFF;
         border-radius: 15px;
         background: none;
-        padding-left: 26px;
+        padding: 10.5px 0 10.5px 26px;
+        color: #fff;
+        font-family: 'Roboto';
     }
 
     .contact__form input::placeholder{
         color: #fff;
+        font-family: 'Roboto';
+    }
+
+    .contact__form textarea{
+       width: 100%;
+        background: none;
+        border: 3px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 10.5px 0 10.5px 26px;
+        color: #fff;
+        font-family: 'Roboto';
+        margin-bottom: 25px;
+    }
+
+    .contact__form textarea::placeholder{
+        color: #fff;
+        font-family: 'Roboto';
+    }
+
+    .contact__form input[type="checkbox"]{
+       width: auto;
+      opacity: 0;
+    }
+
+    .contact__form input[type="checkbox"]:checked + label[for="check"]::before{
+        content: "\2714";
+        color: #D02B2B;
+    }
+
+    label[for="check"]::before{
+        content: " ";
+        color: #000;
+        display: inline-block;
+        font: 20px/30px Arial;
+        margin-right: 15px;
+        position: relative;
+        text-align: center;
+        text-indent: 0px;
+        width: 20px;
+        height: 20px;
+        background: none;
+        border: 2px solid #D02B2B;
+        border-radius: 3px;
+        /* border-image: initial;
+        vertical-align: middle; */
     }
 }
