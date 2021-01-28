@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Risque&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 body{
     font-family: 'Risque';
@@ -96,7 +96,7 @@ header{
 
 .main-section{
     background-color: #141429;
-    padding-top: 253px;
+    padding-top: 198px;
     /* position: relative; */
 }
 
@@ -136,7 +136,8 @@ header{
     text-align: left;
 }
 
-.main-section__decor{
+.main-section__decor,
+.main-section__arrow{
     position: relative;
 }
 
@@ -147,40 +148,107 @@ header{
     animation: moving 60s infinite linear;
 }
 
+.main-section__arrow img{
+    position: absolute;
+    top: -80px;
+    left: 152px;
+}
+
 .present__content{
     background-image: url(img/bg-present.png);
     padding-top: 94px;
-    padding: 94px 31px 0 31px;
+    padding: 220px 31px 0 116px;
     background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    padding: 158px 38px 102px 66px;
+    flex-wrap: wrap;
 }
 
 .present__title{
-    font-size: 52px;
+    font-size: 56px;
     line-height: 60px;
     color: #fff;
     font-weight: normal;
-    padding-right: 62px;
+    width: 700px;
+    padding-bottom: 30px;
 }
 
 .present__choose-present p{
     font-weight: normal;
-    font-size: 28px;
+    font-size: 38px;
     line-height: 32px;
     color: #FFFFFF;
+    padding-bottom: 30px;
 }
 
 .present__choose-present{
-    padding-top: 25px;
+    padding-top: 30px;
 }
 
 .present__items{
     display: flex;
     justify-content: space-between;
     padding-bottom: 74px;
+    width: 520px;
 }
+
+.present__item{
+    width: 150px;
+    height: 150px;
+    border: 5px solid #FFFFFF;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.present__item.active{
+    background: none;
+}
+
+.present__description{
+    display: flex;
+    border: 3px solid #FFFFFF;
+    border-radius: 20px;
+    padding: 58px 38px 38px 35px;
+}
+
+.present__description_position{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.present__description__text{
+    font-size: 28px;
+    font-family: 'Roboto';
+    width: 300px;    
+}
+
+.present__name{
+    font-size: 42px;
+    padding-bottom: 29px;
+}
+
+.present__description .container:first-child{
+    order: 2;
+}
+
+.present_img_position{
+    align-items: center;
+}
+
+
 
 @keyframes moving {
     100% {transform: rotate(-360deg);}
+}
+
+@media (max-width:740px){
+    .nav__menu{
+        display: none;
+    }
 }
 
 /* @media (min-width: 456px) and (max-width: 1440px){
