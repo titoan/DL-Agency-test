@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coca-Cola</title>
-    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />    
+    <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
+    <link rel="stylesheet" href="fullPage/fullpage.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style-455w.css">
 </head>
@@ -16,76 +17,116 @@
             </div>
 
             <div class="nav__navigation">
+
+                <div class="nav__menu">
+                    <ul class="nav__menu__nav">
+                        <li><a href="#main-section">Main</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="#present">Products</a></li>
+                        <li><a href="#contact">Contacts</a></li>
+                    </ul>
+                </div>
                 <div class="nav__gumburger">
-                    <span class="nav__gumburger__item"></span>
-                    <span class="nav__gumburger__item"></span>
-                    <span class="nav__gumburger__item"></span>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section class="main-section">
-        <div class="main-section__content">
-            <h1 class="main-section__title">Main Site Title</h1>
-            <p class="main-section__text">Lorem ipsum descripsum</p>
-            <div class="container main-section__button_position">
-                <a href="" class="main-section__button">Call to action</a>
-            </div>           
-        </div>
-        <div class="main-section__img">
-            <img src="img/dedcoca-main.png" alt="">
-        </div>       
-    </section>
-
-    <section class="present">
-        <div class="present__content">
-            <h2 class="present__title">At least somewhere you can feel new year atmosphere</h2>
-
-            <div class="present__choose-present">
-                <p>Choose your present:</p>
-                <div class="present__items">
-                    <div class="present__item"><img src="img/present-item-1.png" alt=""></div>
-                    <div class="present__item"><img src="img/present-item-2.png" alt=""></div>
-                    <div class="present__item"><img src="img/present-item-3.png" alt=""></div>
-                </div>
-
-                <div class="present__description">
-                    <div class="container d_flex d_center">
-                        <img class="" src="img/present-item-1.png" alt="">
-                    </div>
-                    <div class="container d_flex direction_column_center">
-                        <p class="present__name text_center">Best sock ever</p>
-                        <p class="present__description__text">
-                        Reuglar sock have no present
-                        inside Lorem Ipsum is simply
-                        dumm  y text of the printing and 
-                        types etting industry. Lorem 
-                        </p>
+                    <div class="container d_flex d_between direction_column_center">
+                        <span class="nav__gumburger__item"></span>
+                        <span class="nav__gumburger__item"></span>
+                        <span class="nav__gumburger__item"></span>
                     </div>
                     
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="contact">
-        <div class="contact__content">
-            <h2 class="contact__title">Write us for real presents</h2>
-
-            <div class="contact__form">
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Phone">
-                <input type="text" placeholder="Gender">
-                <input type="text" placeholder="Email">
-                <textarea type="textarea" rows="4" wrap="soft" placeholder="Your wish"></textarea>
-                 <label for="check">
-                    <input type="checkbox" id="check">
-                 </label>
-            </div>
+    <div id="fullpage">
+        <div class="section">
+            <section class="main-section" id="main-section">
+                <div class="main-section__content">
+                    <h1 class="main-section__title">Main Site Title</h1>
+                    <p class="main-section__text">Lorem ipsum descripsum</p>
+                    <div class="container main-section__button_position">
+                        <a href="" class="main-section__button">Call to action</a>
+                    </div>           
+                </div>
+                <div class="main-section__img">
+                    <img src="img/dedcoca-main.png" alt="">
+                </div>
+                
+                <div class="main-section__decor">
+                    <img class="main-section__flake" src="img/flake.png" alt="">
+                </div>
+            </section>
         </div>
-    </section>
+    
+        <div class="section">
+            <section class="present" id="present">
+                <div class="present__content">
+                    <h2 class="present__title">At least somewhere you can feel new year atmosphere</h2>
+        
+                    <div class="present__choose-present">
+                        <p>Choose your present:</p>
+                        <div class="present__items">
+                            <div class="present__item"><img src="img/present-item-1.png" alt=""></div>
+                            <div class="present__item"><img src="img/present-item-2.png" alt=""></div>
+                            <div class="present__item"><img src="img/present-item-3.png" alt=""></div>
+                        </div>
+        
+                        <div class="present__description">
+                            <div class="container d_flex d_center">
+                                <img class="" src="img/present-item-1.png" alt="">
+                            </div>
+                            <div class="container d_flex direction_column_center">
+                                <p class="present__name text_center">Best sock ever</p>
+                                <p class="present__description__text">
+                                Reuglar sock have no present
+                                inside Lorem Ipsum is simply
+                                dumm  y text of the printing and 
+                                types etting industry. Lorem 
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+       
+    
+        <div class="section">
+            <section class="contact" id="contact">
+                <div class="contact__content">
+                    <h2 class="contact__title">Write us for real presents</h2>
+        
+                    <div class="contact__form">
+                        <input type="text" placeholder="Name">
+                        <input type="text" placeholder="Phone">
+                        <input type="text" placeholder="Gender">
+                        <input type="text" placeholder="Email">
+                        <textarea type="textarea" rows="4" wrap="soft" placeholder="Your wish"></textarea>
+                         <label for="check">
+                            <input type="checkbox" id="check">
+                         </label>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+    </div>
 
     
+    
+    <!-- <script src="fullPage/fullpage.js"></script> -->
+    <!-- <script src="fullPage/fullpage.extensions.min.js"></script> -->
+
+    <script>
+        new fullpage('#fullpage', {
+	//options here
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+//methods
+// fullpage_api.setAllowScrolling(false);
+    </script>
 </body>
 </html>

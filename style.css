@@ -32,12 +32,158 @@ h2{
     justify-content: center;
 }
 
+.d_between{
+    justify-content: space-between;
+}
+
 .direction_column_center{
     flex-direction: column;
     align-items: center;
 }
 
-@media (min-width: 456px) and (max-width: 1440px){
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;    
+    padding: 43px 49px 0 25px;
+}
+
+.nav__navigation{
+    width: 633px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__menu__nav{
+    display: flex;
+    justify-content: space-between;
+    width: 420px;
+    list-style: none;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+
+.nav__menu__nav li a{
+    color: #fff;
+}
+
+.nav__gumburger__item{
+    display: block;
+    background-color: #fff;
+    height: 3.67px;
+    width: 34px;
+}
+
+.nav__gumburger{
+    background-color: #D02B2B;    
+    border-radius: 100px 100px 100px;
+    border-top-right-radius: 0;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__gumburger .container{
+    height: 23px;
+}
+
+.main-section{
+    background-color: #141429;
+    padding-top: 253px;
+    /* position: relative; */
+}
+
+.main-section__content{
+    padding-left: 148px;
+
+}
+
+.main-section__title{
+    color: #fff;
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 60px;
+}
+
+.main-section__text{
+    font-size: 28px;
+    padding-bottom: 43px;
+}
+
+.main-section__button{
+    font-size: 16px;
+    color: #fff;
+    display: inline-block;
+    padding: 8px 46px;
+    border: 2px solid #FFFFFF;
+    border-radius:  20px 20px 20px 0px;
+}
+
+.main-section__img{
+    padding-top: 77px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-section__button_position{
+    text-align: left;
+}
+
+.main-section__decor{
+    position: relative;
+}
+
+.main-section__flake{
+    position: absolute;
+    bottom: -40px;
+    left: -222px;
+    animation: moving 60s infinite linear;
+}
+
+.present__content{
+    background-image: url(img/bg-present.png);
+    padding-top: 94px;
+    padding: 94px 31px 0 31px;
+    background-size: cover;
+}
+
+.present__title{
+    font-size: 52px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: normal;
+    padding-right: 62px;
+}
+
+.present__choose-present p{
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+
+.present__choose-present{
+    padding-top: 25px;
+}
+
+.present__items{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 74px;
+}
+
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
+
+/* @media (min-width: 456px) and (max-width: 1440px){
     header{
         position: fixed;
         width: 100%;
@@ -136,4 +282,4 @@ h2{
         justify-content: space-between;
         padding-bottom: 74px;
     }
-}
+} */
