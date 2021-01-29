@@ -183,7 +183,7 @@ header{
     padding-bottom: 283px;
     background-size: contain;
     position: relative;
-    z-index: 999;
+    z-index: 40;
 }
 
 .main-section__title{
@@ -210,6 +210,7 @@ header{
 .main-section__button:hover{
     background-color: #fff;
     color: rgba(0,0,0,0);
+    color:#141429;
 }
 
 .main-section__img{
@@ -263,11 +264,17 @@ header{
     left: 152px;
 }
 
-.present__content{
+.present{
     background-image: url(img/bg-present.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.present__content{
+    
     padding-top: 94px;
     padding: 220px 31px 0 116px;
-    background-size: cover;
+    
     display: flex;
     justify-content: space-between;
     padding: 158px 38px 102px 66px;
@@ -395,7 +402,8 @@ header{
     display: flex;
 }
 
-.contact__form input{
+.contact__form input,
+.contact__form select{
     width: 220px;
     margin-bottom: 25px;
         border: 3px solid #FFFFFF;
@@ -424,40 +432,7 @@ header{
      height: 76px;
  }
 
-
-@keyframes moving {
-    100% {transform: rotate(-360deg);}
-}
-
-@media (max-width:780px){
-    .nav__menu{
-        display: none;
-    }
-
-    .nav__navigation{
-        width: inherit;
-    }
-
-    .present__title{
-        width: 100%;
-    }
-
-    .main-section__decor{
-        display: none;
-    }
-
-    .main-section__arrow{
-        display: none;
-    }
-}
-
-@media (max-width: 1024px){
-    .main-section__img{
-        display: none;
-    }
-}
-
-.check-box-style{
+ .check-box-style{
     position: relative;
 }
 
@@ -469,7 +444,7 @@ header{
 
 .check{
     left: 5px;
-    bottom: 12px;
+    bottom: 15px;
     position: absolute;
     display: none;
 }
@@ -522,3 +497,41 @@ label[for="check"]::before{
     display: inline-block;
     color: #D02B2B;
 }
+
+select[name="Gender"] option{
+    color:#D02B2B;
+}
+
+
+@keyframes moving {
+    100% {transform: rotate(-360deg);}
+}
+
+@media (max-width:780px){
+    .nav__menu{
+        display: none;
+    }
+
+    .nav__navigation{
+        width: inherit;
+    }
+
+    .present__title{
+        width: 100%;
+    }
+
+    .main-section__decor{
+        display: none;
+    }
+
+    .main-section__arrow{
+        display: none;
+    }
+}
+
+@media (max-width: 1024px){
+    .main-section__img{
+        display: none;
+    }
+}
+

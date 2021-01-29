@@ -1,4 +1,4 @@
-@media (min-width: 220px) and (max-width: 455px){
+@media (min-width: 320px) and (max-width: 455px){
 
     h2{
         font-size: 52px;        
@@ -70,11 +70,232 @@
         text-align: center;
     }
 
-    .present__content{
+    .present{
         background-image: url(img/bg-present-mobile.png);
-        padding-top: 94px;
-        padding: 94px 31px 80px 31px;
         background-size: cover;
+    }
+
+    .present__content{        
+        padding: 50px 31px 60px 33px;
+    }
+    
+    .present__title{
+        font-size: 52px;
+        line-height: 60px;
+        color: #fff;
+        font-weight: normal;
+        /* padding-right: 62px; */
+        width: 100%;
+    }
+    
+    .present__choose-present>p{
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 32px;
+        color: #FFFFFF;
+        padding-bottom: 34px;
+    }
+    
+    .present__choose-present{
+        padding-top: 25px;
+    }
+    
+    .present__items{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 0;
+        width: 100%;
+    }
+
+    .present__item{
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid #FFFFFF;
+        border-radius: 100px;
+    }
+
+    .present__item .img{
+        width: 111px;
+        height: 111px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .present__item:first-child .img{
+        background-image: url(img/mob-ico-present/present-item-mob-1.png);
+    }
+    
+    .present__item:nth-child(2) .img{
+        background-image: url(img/mob-ico-present/present-item-mob-2.png);
+    }
+    
+    .present__item:last-child .img{
+        background-image: url(img/mob-ico-present/present-item-mob-3.png);
+    }
+
+    .present__name{
+        font-size: 42px;
+        padding-bottom: 30px;
+    }
+
+    .present__description{
+        justify-content: center;
+        border: none;
+    }
+
+    .present__description.active{
+        border: none;
+        padding: 0;
+    }
+
+    .present__description__text{
+        font-family: 'Roboto';
+        font-size: 28px;
+        width: 301px;
+    }
+
+    .present__description .container:first-child{
+        order: 0;
+    }
+    
+    .contact__content{
+        padding: 133px 31px 50px 31px;
+        background-image: url(img/bg-contact-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-family: 'Roboto';   
+    }
+
+    .contact__title{
+        padding-bottom: 30px;
+        font-family: 'Risque';
+    }
+
+    .contact__form{
+        width: 100%;
+    }
+
+    .contact__form input,
+    .contact__form select{
+        width: 100%;
+        margin-bottom: 25px;
+        border: 3px solid #FFFFFF;
+        border-radius: 15px;
+        background: none;
+        padding: 10.5px 0 10.5px 26px;
+        color: #fff;
+        font-family: 'Roboto';
+    }
+
+    .contact__form input::placeholder{
+        color: #fff;
+        font-family: 'Roboto';
+    }
+
+    .contact__form textarea{
+       width: 100%;
+        background: none;
+        border: 3px solid #FFFFFF;
+        border-radius: 15px;
+        padding: 10.5px 0 10.5px 26px;
+        color: #fff;
+        font-family: 'Roboto';
+        margin-bottom: 25px;
+    }
+
+    .contact__form textarea::placeholder{
+        color: #fff;
+        font-family: 'Roboto';
+    }
+
+    .contact__form input[type="checkbox"]{
+       width: auto;
+      opacity: 0;
+    }
+}
+
+@media (min-width:455px) and (max-width:650px){
+    
+    h2{
+        font-size: 52px;        
+    }
+
+    header{
+        position: static;
+        width: 100%;
+        background-color: #141429;
+    }
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+       
+        padding: 25px 25px 0 25px;
+    }
+    
+    .nav__navigation{
+        width: inherit;
+    }
+    
+    .nav__gumburger{
+        background-color: #D02B2B;
+        padding: 14px 13px;
+        border-radius: 100px 100px 100px;
+        border-top-right-radius: 0;
+    }
+    
+    .main-section{
+        background-color: #141429;
+        padding-top: 131px;
+    }
+    
+    .main-section__content{
+        padding-left: 25px;
+    }
+    
+    .main-section__title{
+        color: #fff;
+        font-size: 52px;
+        font-weight: 400;
+        line-height: 60px;
+    }
+    
+    .main-section__text{
+        font-size: 28px;
+        padding-bottom: 43px;
+    }
+    
+    .main-section__button{
+        font-size: 16px;
+        color: #fff;
+        display: inline-block;
+        padding: 8px 46px;
+        border: 2px solid #FFFFFF;
+        border-radius:  20px 20px 20px 0px;
+    }
+    
+    .main-section__img{
+        padding-top: 77px;
+    }
+
+    .main-section__img img{
+        /* max-width: 116%; */
+    }
+    
+    .main-section__button_position{
+        text-align: center;
+    }
+
+    .present{
+        background-image: url(img/bg-present-mobile.png);
+        background-size: cover;
+    }
+
+    .present__content{        
+        padding: 50px 31px 60px 33px;
     }
     
     .present__title{
@@ -146,6 +367,7 @@
 
     .present__description.active{
         border: none;
+        padding: 25px 38px 38px 35px;
     }
 
     .present__description__text{
@@ -175,7 +397,8 @@
         width: 100%;
     }
 
-    .contact__form input{
+    .contact__form input,
+    .contact__form select{
         width: 100%;
         margin-bottom: 25px;
         border: 3px solid #FFFFFF;
@@ -211,8 +434,4 @@
        width: auto;
       opacity: 0;
     }
-
-   
-
-  
 }
