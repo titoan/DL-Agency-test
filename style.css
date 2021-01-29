@@ -337,11 +337,19 @@ header{
 }
 
 .present__description{
+    display: none;
+}
+
+.present__description.active{
     display: flex;
     border: 3px solid #FFFFFF;
     border-radius: 20px;
     padding: 58px 38px 38px 35px;
     flex-wrap: wrap;
+}
+
+.present__description__content.active{
+    display: block;
 }
 
 .present__description_position{
@@ -373,6 +381,7 @@ header{
     padding: 200px 0 200px 71px;
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Roboto';
 }
 
 .contact__title{
@@ -448,103 +457,68 @@ header{
     }
 }
 
-/* @media (min-width: 456px) and (max-width: 1440px){
-    header{
-        position: fixed;
-        width: 100%;
-    }
-    
-    .nav{
-        display: flex;
-        justify-content: space-between;    
-        padding: 25px 25px 0 25px;
-    }
-    
-    .nav__gumburger__item{
-        display: block;
-        background-color: #fff;
-        height: 3.67px;
-        width: 34px;
-        margin: 5.5px 0;
-    
-    }
-    
-    .nav__gumburger{
-        background-color: #D02B2B;
-        padding: 14px 13px;
-        border-radius: 100px 100px 100px;
-        border-top-right-radius: 0;
-    }
-    
-    .main-section{
-        background-color: #141429;
-        padding-top: 260px;
-    }
-    
-    .main-section__content{
-        padding-left: 31px;
-    }
-    
-    .main-section__title{
-        color: #fff;
-        font-size: 52px;
-        font-weight: 400;
-        line-height: 60px;
-    }
-    
-    .main-section__text{
-        font-size: 28px;
-        padding-bottom: 43px;
-    }
-    
-    .main-section__button{
-        font-size: 16px;
-        color: #fff;
-        display: inline-block;
-        padding: 8px 46px;
-        border: 2px solid #FFFFFF;
-        border-radius:  20px 20px 20px 0px;
-    }
-    
-    .main-section__img{
-        padding-top: 77px;
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    .main-section__button_position{
-        text-align: left;
-    }
-    
-    .present__content{
-        background-image: url(img/bg-present.png);
-        padding-top: 94px;
-        padding: 94px 31px 0 31px;
-        background-size: cover;
-    }
-    
-    .present__title{
-        font-size: 52px;
-        line-height: 60px;
-        color: #fff;
-        font-weight: normal;
-        padding-right: 62px;
-    }
-    
-    .present__choose-present p{
-        font-weight: normal;
-        font-size: 28px;
-        line-height: 32px;
-        color: #FFFFFF;
-    }
-    
-    .present__choose-present{
-        padding-top: 25px;
-    }
-    
-    .present__items{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 74px;
-    }
-} */
+.check-box-style{
+    position: relative;
+}
+
+.check-box-style input{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+}
+
+.check{
+    left: 5px;
+    bottom: 12px;
+    position: absolute;
+    display: none;
+}
+
+.check-box-style .check__item{
+    width: 11px;
+    height: 3px;
+    background-color: #D02B2B;
+    display: block;
+    transform: rotate(-46deg);
+    position: relative;
+   
+}
+
+.check-box-style .check__item::after{
+    content: ' ';
+    width: 5px;
+    height: 3px;
+    position: absolute;
+    background: #D02B2B;
+    top: -2px;
+    left: -1px;
+    transform: rotate(-85deg);
+}
+
+.check-box-style input:checked + .check{
+    display: block;
+}
+
+.check-box-style > .text{
+    color: #D02B2B ;
+}
+
+label[for="check"]::before{
+    content: " "; 
+    margin-right: 7px;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: none;
+    border: 2px solid #D02B2B;
+    display: inline-block;    
+}
+
+.check-box{
+    display: flex;
+}
+
+.check-box p{
+    display: inline-block;
+    color: #D02B2B;
+}

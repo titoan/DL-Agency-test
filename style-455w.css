@@ -144,6 +144,10 @@
         border: none;
     }
 
+    .present__description.active{
+        border: none;
+    }
+
     .present__description__text{
         font-family: 'Roboto';
         font-size: 28px;
@@ -208,26 +212,7 @@
       opacity: 0;
     }
 
-    .contact__form input[type="checkbox"]:checked + label[for="check"]::before{
-        content: "\2714";
-        color: #D02B2B;
-    }
+   
 
-    label[for="check"]::before{
-        content: " ";
-        color: #000;
-        display: inline-block;
-        font: 20px/30px Arial;
-        margin-right: 15px;
-        position: relative;
-        text-align: center;
-        text-indent: 0px;
-        width: 20px;
-        height: 20px;
-        background: none;
-        border: 2px solid #D02B2B;
-        border-radius: 3px;
-        /* border-image: initial;
-        vertical-align: middle; */
-    }
+  
 }
