@@ -59,6 +59,7 @@ header{
     display: flex;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
 }
 
 .nav__menu__nav{
@@ -68,6 +69,7 @@ header{
     list-style: none;
     font-family: 'Roboto';
     font-size: 16px;
+    overflow: hidden;
 }
 
 .nav__menu__nav li a{
@@ -207,11 +209,11 @@ header{
     border-radius:  20px 20px 20px 0px;
 }
 
-.main-section__button:hover{
+/* .main-section__button:hover{
     background-color: #fff;
     color: rgba(0,0,0,0);
     color:#141429;
-}
+} */
 
 .main-section__img{
     position: relative;
@@ -535,3 +537,43 @@ select[name="Gender"] option{
     }
 }
 
+.nav__menu__nav li:first-child a:after{
+    content: 'Main';
+    position: absolute;
+    bottom: -19px;
+    left: 0px;
+    color: #D02B2B;
+}
+
+.nav__menu__nav li:nth-child(2) a:after{
+    content: 'About';
+    position: absolute;
+    bottom: -19px;
+    left: 0px;
+    color: #D02B2B;
+}
+
+.nav__menu__nav li:nth-child(3) a:after{
+    content: 'Products';
+    position: absolute;
+    bottom: -19px;
+    left: 0px;
+    color: #D02B2B;
+}
+
+.nav__menu__nav li:last-child a:after{
+    content: 'Contacts';
+    position: absolute;
+    bottom: -19px;
+    left: 0px;
+    color: #D02B2B;
+}
+
+.nav__menu__nav li{
+    transform: translateY(0px);
+    transition: transform 1s;
+}
+
+.nav__menu__nav li:hover{
+    transform: translateY(-18px);
+}
